@@ -109,7 +109,7 @@ Finally, the design aims to achieve all the above goals while keeping cost as lo
 ### 1.B.2 Typical package structure 
 The die is mounted on a carrier, then sealed with a mold compound. Signals pass through die-to-carrier interconnections, and then from the carrier to the system board (PCB).   
 <p allign="center">
-  <img src="./MOD1/Mod1.1.14.png" width="300">
+  <img src="./MOD1/Mod1.14.png" width="700">
 </p>  
 
 | **Component**                    | **Description** |
