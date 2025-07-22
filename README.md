@@ -106,6 +106,48 @@ The material choice for the package affects how long the chip can function under
  * **Cost:**  
 Finally, the design aims to achieve all the above goals while keeping cost as low as possible, making the product commercially viable.
 
+### 1.B.2 Typical package structure 
+The die is mounted on a carrier, then sealed with a mold compound. Signals pass through die-to-carrier interconnections, and then from the carrier to the system board (PCB).   
+<p allign="center">
+  <img src="./MOD1/Mod1.1.14.png" width="300">
+</p>  
+
+| **Component**                    | **Description** |
+|----------------------------------|-----------------|
+| **Mold Compound**               | Protective outer layer that encapsulates the chip and interconnects, guarding against physical damage, dust, and moisture. |
+| **Die**                         | The silicon chip that performs the actual electronic function (e.g., logic or memory). It sits inside the package. |
+| **Die-to-Carrier Interconnections** | Tiny electrical links (e.g., wire bonds or microbumps) that connect the die to the carrier, enabling signal and power flow. |
+| **Carrier**                     | Also called the package substrate; it supports the die and connects it to the system board (PCB). Acts as a bridge. |
+| **Carrier-to-Board Interconnections** | Electrical paths (e.g., solder balls) that link the carrier to the system board, enabling full chip-to-system communication. |
+| **System Board (PCB)**          | The main circuit board that hosts multiple chips and distributes power, signals, and clock throughout the system. |
+
+### 1.B.3 Types of Semiconductor Packages
+<p allign="center">
+  <img src="./MOD1/Mod1.7.png" width="700">
+</p> 
+
+ * **Through-Hole Mounting (THM)**
+Older but still-used packaging style where pins go through holes in the PCB and are soldered on the other side.
+
+| **Package** | **Full Form**           | **Description**                                                                 |
+|-------------|-------------------------|---------------------------------------------------------------------------------|
+| **DIP**     | Dual In-line Package    | Two parallel rows of pins; used in older ICs and microcontrollers.             |
+| **TO**      | Transistor Outline      | Cylindrical/flat body with leads; common for transistors and power devices.    |
+| **PGA**     | Pin Grid Array          | Grid of pins on the bottom; allows high pin count and good connectivity.       |
+
+ *  **Surface Mount Technology (SMT)**
+Modern style where packages are directly mounted onto the surface of the PCB. Used in compact, high-performance designs.
+
+| **Package** | **Full Form**                     | **Description**                                                                 |
+|-------------|-----------------------------------|---------------------------------------------------------------------------------|
+| **QFN**     | Quad Flat No-lead                 | Flat package with leads under the body; low profile and cost-effective.        |
+| **QFP**     | Quad Flat Package                 | Leads on all four sides; common in embedded systems.                           |
+| **CSP**     | Chip Scale Package                | Very compact; nearly the size of the chip. Used in mobile/wearables.           |
+| **PBGA**    | Plastic Ball Grid Array           | Uses solder balls for better thermal/electrical performance.                   |
+| **LGA**     | Land Grid Array                   | Flat contacts underneath; used in CPUs and high-density devices.               |
+| **PoP**     | Package on Package                | Allows stacking chips (e.g., memory over logic) to save space.                 |
+| **MCM**     | Multi-Chip Module (Intel Broadwell) | Multiple chips in one package for higher performance and density.           |
+| **CoWoS**   | Chip-on-Wafer-on-Substrate (NVIDIA H100) | 2.5D/3D advanced package with interposer for AI, HPC, and GPUs.         |
 
 
 
