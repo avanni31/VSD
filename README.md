@@ -149,6 +149,120 @@ Modern style where packages are directly mounted onto the surface of the PCB. Us
 | **MCM**     | Multi-Chip Module (Intel Broadwell) | Multiple chips in one package for higher performance and density.           |
 | **CoWoS**   | Chip-on-Wafer-on-Substrate (NVIDIA H100) | 2.5D/3D advanced package with interposer for AI, HPC, and GPUs.         |
 
+## 1.C Evolving Package Architectures - From Single Chip To Multi-Chip Modules
+### 1.C.1 Materials Comparison Table For Carriers
+
+| **Material**    | **Characteristics**                                  | **Typical Usage**                                |
+|------------------|-------------------------------------------------------|--------------------------------------------------|
+| **Leadframe**    | Metal-based, economical                              | Simple discrete devices                          |
+| **Laminate**     | Organic layers with copper routing                   | Consumer electronics and mobile SoCs            |
+| **Plastic**      | Cost-effective molding                               | Entry-level ICs                                  |
+| **Ceramic**      | Excellent thermal and electrical properties          | High-reliability, military, aerospace            |
+| **Organic RDL**  | Redistribution layers, compact, flexible             | Advanced packaging                               |
+| **Silicon**      | High-density interconnect and precision              | Chiplets and 2.5D/3D integration                 |
+| **Glass**        | Emerging material with high-density routing          | Future advanced packages                         |
+
+### 1.C.2 Options For Interconnection
+This section explains two common interconnection techniques used in semiconductor packaging: **Wirebond** and **Bump/Solder (Flip-Chip)**.
+<p allign="center">
+  <img src="./MOD1/Mod1.8.png" width="700">
+</p> 
+
+1.**Wirebond**  
+Wirebonding is a traditional method of connecting the die to the package substrate using fine metal wires.
+
+**Key Features:**
+- Uses thin metal wires (e.g., gold, aluminum).
+- Die is connected to the substrate via bond pads and wires.
+- Covered with a mold compound for protection.
+
+**Advantages:**
+- Cost-effective and mature technology.
+- Simple manufacturing process.
+
+**Limitations:**
+- Longer interconnects → slower signals.
+- Less ideal for high-density/high-speed applications.
+
+---
+
+2.**Bump/Solder (Flip-Chip)**  
+In flip-chip packaging, the die is flipped and connected directly to the substrate using solder bumps.
+
+**Key Features:**
+- Die faces down; connections are made using solder bumps.
+- Epoxy underfill is applied between die and substrate for mechanical and thermal stability.
+- Mold compound protects the entire structure.
+
+**Advantages:**
+- Shorter interconnects → better signal integrity.
+- Higher I/O density and improved performance.
+- Better thermal performance with underfill.
+
+### 1.C.3 Anatomy Of Packaging
+This repository provides an overview of different semiconductor package types based on **substrate material** and **integration complexity**. It includes leadframe, laminate, and advanced substrate packages.
+
+| **Substrate Type** | **Package Types**                           | **Key Features**                                                  | **Typical Usage**                          |
+|--------------------|---------------------------------------------|-------------------------------------------------------------------|--------------------------------------------|
+| **Leadframe**       | DIP, QFN, Leadframe-CSP, Leadframe-QFP     | Metal-based, low-cost, good for wirebonding                       | Discrete components, low-pin ICs           |
+| **Laminate**        | Wire Bond PBGA, Flip Chip PBGA, LGA, FC-CSP| Organic substrate with copper routing, supports high pin-count    | SoCs, mobile, networking, high-speed I/Os  |
+| **Advanced Substrate** | 2D, 2.1D, 2.3D, 2.5D (CoWoS)             | High-density interconnects, chiplet integration, interposers      | AI/ML, HPC, 5G, advanced heterogeneous ICs  |
+
+1. **Leadframe Packages**
+
+Leadframe is a cost-effective, metal-based packaging solution.
+<p allign="center">
+  <img src="./MOD1/Mod1.9.png" width="300">
+</p> 
+
+
+| Package         | Description                                       |
+|----------------|---------------------------------------------------|
+| **DIP**         | Dual-inline package with wirebonds and leadframe |
+| **QFN**         | Flat no-lead, small footprint                     |
+| **Leadframe-CSP** | Chip-scale package with compact mold            |
+| **Leadframe-QFP** | Quad flat with gull-wing leads                  |
+
+2. **Laminate Packages**
+
+Laminate substrates are used for high-density routing in modern ICs.
+<p allign="center">
+  <img src="./MOD1/Mod1.10.png" width="300">
+</p> 
+
+ * **Wirebond PBGA**
+- Die wirebonded to laminate substrate.
+- Mold compound for protection.
+- Solder balls provide board-level connection.
+
+ * **Flip Chip PBGA**
+- Die is flipped and connected using solder bumps.
+- Epoxy underfill improves reliability.
+- Used for performance-critical systems.
+
+ * **Other Package Examples**
+
+| Package   | Description                                  |
+|-----------|----------------------------------------------|
+| **PBGA**  | Plastic Ball Grid Array                      |
+| **LGA**   | Land Grid Array (no solder balls)            |
+| **FC-CSP**| Flip Chip Chip Scale Package                 |
+
+3. **Advanced Substrate Packaging**
+
+Used in high-end systems requiring dense I/O and multi-die integration.
+<p allign="center">
+  <img src="./MOD1/Mod1.11.png" width="300">
+</p> 
+
+| Package Type | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| **2D**       | Side-by-side dies on a common substrate                       |
+| **2.1D**     | Adds RDL (Redistribution Layer) for improved routing          |
+| **2.3D**     | Uses organic interposer between dies and substrate            |
+| **2.5D**     | Silicon interposer for ultra-high-density interconnect        |
+| **CoWoS**    | Chip on Wafer on Substrate (SoC + HBM on silicon interposer)  |
+
 
 
 
