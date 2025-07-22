@@ -199,7 +199,8 @@ In flip-chip packaging, the die is flipped and connected directly to the substra
 - Higher I/O density and improved performance.
 - Better thermal performance with underfill.
 
-### 1.C.3 Anatomy Of Packaging
+## 1.D Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches
+### 1.D.1 Anatomy Of Packaging
 This repository provides an overview of different semiconductor package types based on **substrate material** and **integration complexity**. It includes leadframe, laminate, and advanced substrate packages.
 
 | **Substrate Type** | **Package Types**                           | **Key Features**                                                  | **Typical Usage**                          |
@@ -262,6 +263,28 @@ Used in high-end systems requiring dense I/O and multi-die integration.
 | **2.3D**     | Uses organic interposer between dies and substrate            |
 | **2.5D**     | Silicon interposer for ultra-high-density interconnect        |
 | **CoWoS**    | Chip on Wafer on Substrate (SoC + HBM on silicon interposer)  |
+
+### 1.D.2  Semiconductor Packaging Integration Flow (COB to 3D)
+<p allign="center">
+  <img src="./MOD1/Mod1.12.png" width="500">
+</p> 
+
+The image provides a comprehensive flow of how semiconductors (single or multichip) are packaged and assembled onto a Printed Circuit Board (PCB) through various levels of substrate technology:  
+
+- **Semiconductors** may be single-chip or multi-chip (chiplets, SoCs).
+- **Integration levels** progress from:
+  * **COB** (Chip on Board)
+  * **PBGA/fcCSP** (standard surface mount)
+  * **2D to 3D** architectures using interposers and TSVs
+- **Interposer types**:
+  * **Thin-Film**, **TSV-less**, **Passive TSV**, **Active TSV**
+- The **Package Substrate** (carrier) connects to the **PCB**, completing the system.
+
+## 1.E Comparative Analysis And Selecting The Right Packaging Solution
+<p allign="center">
+  <img src="./MOD1/Mod1.13.png" width="700">
+</p> 
+
 
 
 
