@@ -285,7 +285,12 @@ The image provides a comprehensive flow of how semiconductors (single or multich
   <img src="./MOD1/Mod1.13.png" width="700">
 </p> 
 
-
+## 2.From Wafer To Package:Assembly And Manufacturing Essentials  
+## 2.A Setting The Stage - Supply Chain And Facilities
+## 2.B Wafer Pre-Preparation - Grinding And Dicing
+## 2.C Wire Bond Packaging - Die Attach To Molding
+## 2.D Flip Chip Assembly - Bump Formation And Underfill
+## 2.E Wafer Level Packaging And Conclusion
 
 
 
