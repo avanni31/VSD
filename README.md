@@ -608,11 +608,129 @@ Wafer Level Packaging (WLP) is a technology where the IC packaging process is do
 ### 2.A Introduction And Getting Started With ANSYS Electronics Desktop  
 ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that combines Electromagnetic, Signal Integrity, Thermal and Electro-Mechanical simulation tools in a single integrated platform and it is widely used for designing and analyzing high-speed electronic circuits and systems.
 ### 2.B Setting Up A Flip-Chip BGA Package  
+<p allign="center">
+  <img src="./MOD3/Mod3.1.png" width="700">
+</p>  
 
-### 2.C Material Definitions And Thermal Power Sources
-### 2.D Meshing And Running The Thermal Analysis
-### 2.E Viewing Results And Exploring Other Package Types
+ **Create Flipchip BGA Package**
+<p allign="center">
+  <img src="./MOD3/Mod3.2.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.3.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.4.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.5.png" width="700">
+</p>
 
+**The Package is generated:**
+<p allign="center">
+  <img src="./MOD3/Mod3.6.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.7.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.8.png" width="700">
+</p>
+
+### 2.C Material Definitions And Thermal Power Sources  
+
+1. Review and modify the material and definition types for the different components of the model.
+2. Add or Assign Source Thermal Model for Die
+  * In "Project Manager" sub-window, expand Thermal section and open the "BGA1_die_source" and configure the thermal condition as shown below:
+<p allign="center">
+  <img src="./MOD3/Mod3.9.png" width="700">
+</p>
+3. Add/ Assign Source Thermal Model for Substrate 
+
+  * To add thermal boundary condition for the substrate, right click on "Flipchip_BGA1_substrate" under "Models -> Flipchip_BGA1_Group -> Solids" and assign a Thermal Source.  
+  
+  *  Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.
+
+<p allign="center">
+  <img src="./MOD3/Mod3.10.png" width="700">
+</p>
+4. Add Thermal monitors for the different components
+
+  * To add a Thermal monitor to the substrate, right click on the "Flipchip_BGA1_substrate" under "Models -> Flipchip_BGA1_Group -> Solids" and choose "Assign Monitor -> Point"
+    
+  * In the sub-window that appears, select "Temperature"
+    
+  * Repeat the same for the die and the die-underfill.
+    
+<p allign="center">
+  <img src="./MOD3/Mod3.11.png" width="700">
+</p>
+
+### 2.D Meshing And Running The Thermal Analysis  
+5. Generate Mesh  
+6. Review Mesh Quality metrics  
+
+**Mesh Quality - Face Alignment**
+<p allign="center">
+  <img src="./MOD3/Mod3.12.png" width="700">
+</p>
+
+**Mesh Quality - Skewness**
+<p allign="center">
+  <img src="./MOD3/Mod3.13.png" width="700">
+</p>
+
+**Mesh Quality - Volume**
+<p allign="center">
+  <img src="./MOD3/Mod3.14.png" width="700">
+</p>
+
+7. Add Thermal Analysis
+Under "Project Manager", right click on "Analysis and select Add Analysis Setup" and configure the settings as required.
+<p allign="center">
+  <img src="./MOD3/Mod3.15.png" width="700">
+</p>
+
+### 2.E Viewing Results And Exploring Other Package Types  
+1. Validate the Simulation setup
+   
+ * Click on the "Validate" button in the top
+   
+ * Ensure all checks are validated
+   
+<p allign="center">
+  <img src="./MOD3/Mod3.16.png" width="700">
+</p>  
+2. Run the simulation and plot the temperature map
+
+ * Click on "Analyze All" button in the top
+   
+ * Wait for the simulation to get completed
+   
+ * After the simulation is completed, select the complete FC-BGA package by drawing a rectangle using the left-click button.
+   
+ * Right click and then select "Plot Fields -> Temperature -> Temperature"
+   
+ * Click on the different plot options:
+   
+  a.Specify Name and Folder
+
+  b.Plot on Surface only
+
+  c.Surface Smoothing and click on "Enable Gaussian Smoothing"
+   
+<p allign="center">
+  <img src="./MOD3/Mod3.17.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.18.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.19.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD3/Mod3.20.png" width="700">
+</p>
 
 
 
