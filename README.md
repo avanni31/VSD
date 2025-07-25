@@ -604,3 +604,15 @@ Wafer Level Packaging (WLP) is a technology where the IC packaging process is do
 | 8    | Solder Ball Attach           | Provide external electrical interface             |
 | 9    | Laser Marking & Singulation  | Identify and separate final packaged chips        |
 
+## 2. Labs:Thermal Simulation Of Semiconductor Packages With ANSYS
+### 2.A Introduction And Getting Started With ANSYS Electronics Desktop  
+ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that combines Electromagnetic, Signal Integrity, Thermal and Electro-Mechanical simulation tools in a single integrated platform and it is widely used for designing and analyzing high-speed electronic circuits and systems.
+### 2.B Setting Up A Flip-Chip BGA Package  
+
+### 2.C Material Definitions And Thermal Power Sources
+### 2.D Meshing And Running The Thermal Analysis
+### 2.E Viewing Results And Exploring Other Package Types
+
+
+
+
