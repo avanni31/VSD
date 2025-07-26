@@ -604,10 +604,10 @@ Wafer Level Packaging (WLP) is a technology where the IC packaging process is do
 | 8    | Solder Ball Attach           | Provide external electrical interface             |
 | 9    | Laser Marking & Singulation  | Identify and separate final packaged chips        |
 
-## 2. Labs:Thermal Simulation Of Semiconductor Packages With ANSYS
-### 2.A Introduction And Getting Started With ANSYS Electronics Desktop  
+## 3. Labs:Thermal Simulation Of Semiconductor Packages With ANSYS
+### 3.A Introduction And Getting Started With ANSYS Electronics Desktop  
 ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that combines Electromagnetic, Signal Integrity, Thermal and Electro-Mechanical simulation tools in a single integrated platform and it is widely used for designing and analyzing high-speed electronic circuits and systems.
-### 2.B Setting Up A Flip-Chip BGA Package  
+### 3.B Setting Up A Flip-Chip BGA Package  
 <p allign="center">
   <img src="./MOD3/Mod3.1.png" width="700">
 </p>  
@@ -637,7 +637,7 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
   <img src="./MOD3/Mod3.8.png" width="700">
 </p>
 
-### 2.C Material Definitions And Thermal Power Sources  
+### 3.C Material Definitions And Thermal Power Sources  
 
 1. Review and modify the material and definition types for the different components of the model.
 2. Add or Assign Source Thermal Model for Die
@@ -666,7 +666,7 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
   <img src="./MOD3/Mod3.11.png" width="700">
 </p>
 
-### 2.D Meshing And Running The Thermal Analysis  
+### 3.D Meshing And Running The Thermal Analysis  
 5. Generate Mesh  
 6. Review Mesh Quality metrics  
 
@@ -691,7 +691,7 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
   <img src="./MOD3/Mod3.15.png" width="700">
 </p>
 
-### 2.E Viewing Results And Exploring Other Package Types  
+### 3.E Viewing Results And Exploring Other Package Types  
 1. Validate the Simulation setup
    
  * Click on the "Validate" button in the top
@@ -732,5 +732,137 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
   <img src="./MOD3/Mod3.20.png" width="700">
 </p>
 
+## 4.Ensure Package Reliability: Testing And Performance Validation  
+Ensuring package reliability in semiconductor devices requires more than just mechanical assembly steps like wire bonding or solder bumping—it also demands rigorous electrical testing. While these manufacturing processes ensure structural integrity, they do not verify whether the device functions correctly. Electrical testing is essential to detect issues such as open or short circuits, misaligned interconnects, or degraded signal performance that may not be visible externally. This includes parametric and functional tests, thermal cycling, burn-in testing, and sometimes X-ray inspection to identify hidden defects. Without these tests, there is no guarantee that the packaged chip will operate reliably in real-world applications, making performance validation a critical step before deployment.
+
+### 4.A Introduction to Package Testing and Electrical Functionality Checks  
+### 4.A.1 Tsting at Different Stages
+<p allign="center">
+  <img src="./MOD4/Mod4.1.png" width="700">
+</p>  
+This illustrates the complete process flow from chip manufacturing to final system-level testing, highlighting the collaboration between Foundry and OSAT 
+
+ 1. **Foundary Stage** 
+ 
+  * **Front-End Manufacturing**
+    Integrated circuits are fabricated on silicon wafers using processes like photolithography, etching, and deposition.
+    
+  * **Wafer Probe Test**
+    Electrical probes test each die directly on the wafer to identify functional units before packaging. This helps eliminate faulty dies early.
+    
+  * **Wafer Sorting**
+    Dies are categorized based on test results (good/bad, speed binning, etc.) to determine which ones proceed to packaging.
 
 
+2. **OSAT Stage**
+
+ * **Package Manufacturing**
+   Good dies are packaged using techniques like wire bonding or flip-chip, followed by encapsulation to protect the chip.
+
+ * **Package Testing**
+   The packaged chip undergoes further electrical tests to ensure the packaging process has not introduced any defects.
+   
+ * **System-Level Tests (SLT)**
+   Chips are tested in conditions that simulate actual end-use environments, ensuring real-world functionality and reliability.
+   
+### 4.A.2 Packaging Testing 
+<p allign="center">
+  <img src="./MOD4/Mod4.2.png" width="700">
+</p>
+This illustrates the steps involved in ensuring the reliability of semiconductor packages after fabrication and assembly.  
+
+1.**Packaging Zone(Clean Room - ISO Class 6 & 7)**
+ * Key manufacturing steps like die bonding, wire/flip-chip bonding, encapsulation, and RDL (Redistribution Layer) formation occur here.
+ * Operated in highly controlled cleanroom environments to avoid contamination.
+ * Inspection is an essential and continuous part of the process to catch visual or structural defects early.
+
+   **Package Handling:**
+   Once singulated, individual packages are loaded onto trays, then moved to package boards and sockets for electrical connection during testing.
+
+2.**Testing Area**
+This is where electrical, burn-in, and reliability chamber tests are conducted to ensure the chip will work as intended.  
+**Testing Stages:**
+ * **AOST(Assembly Open And Short Test)**
+   Checks for connection issues like opens or shorts caused during assembly.
+ * **Burn-in Test**
+   Devices are subjected to thermal and voltage stress to identify and eliminate early failures, improving long-term reliability.
+ * **Final Test**
+   Comprehensive cold and hot functional testing to validate electrical characteristics, performance, and reliability across temperature ranges.
+   
+### 4.A.3 Assembly Open And Short Test-> Functionality
+<p allign="center">
+  <img src="./MOD4/Mod4.3.png" width="700">
+</p>
+The AOST is a quick and critical test performed after assembly to detect open or short circuits in package leads or solder balls. It typically follows the Trim and Form process (for lead frame packages) or Singulation (for BGA packages). 
+
+**Key Features:**
+
+ * **Purpose:** Screens for severe electrical failures before the package leaves the assembly floor.
+ * **Visual Inspection:** Checks for damaged, missing or misaligned balls/leads
+ * **Types Of Defects Detected:**
+   * Open(e.g., Head-On-Pillow, Non-Wet Open)
+   * Short(e.g., Bridging)
+   * Die Cracks
+ * **Product Grading**(via PG-SRT system):
+   Best(1),Better(2),Better(3),Scrap(4)
+
+This process ensures that only functionally sound and structurally reliable packages are moved forward for final testing or customer shipment.
+
+### 4.B Reliability and Performance Testing of Semiconductor Packages
+### 4.B.1 Burn-in Test
+<p allign="center">
+  <img src="./MOD4/Mod4.4.png" width="700">
+</p>
+To detect early(infant mortality) failures in package components by exposing them to high temperature, voltage and power cycling before shipping to customers.  
+
+**Key Features:** 
+
+ * **Purpose:** Screens out weak units that would fail soon after deployment.
+ * **How it works:**
+   * Devices are placed Burn-in boards and inserted into Burn-in ovens.
+   * High voltage and temperature stress accelerate potential failure models
+ * **Failure Detection:**
+   Catches defects like dielectric breakdown, metallization issues, and electromigration.
+ * **Test Duration:**
+   Long enough to catch initial failures, up to the point where the failure rate curve flattens.
+ * **Trade-Of:**
+   Improves reliability but slightly reduces total component lifespan.
+   
+### 4.B.2 Final Test
+<p allign="center">
+  <img src="./MOD4/Mod4.5.png" width="700">
+</p>
+This phase in semiconductor testing, focusing on temperature corner testing to ensure that the packaged IC meets its specifications.  
+
+**Test Overview:**
+ * **Parts Loaded into Handler:**
+Devices Under Test (DUTs) are loaded into a handler with temperature-controlled test fixtures (not ovens) connected to an ATE (Automated Test Equipment) setup.
+
+ * **Hot Test:**
+   * Tests are done at high temperatures (e.g., up to 70°C for LM741C).
+   * The DUT is electrically tested to ensure it still performs correctly under elevated thermal stress.
+     
+ * **Cold Test:**
+   * Tests are done at low temperatures (e.g., down to 0°C for LM741C).
+   * DUT is again electrically tested to check for spec compliance at cold corners.
+
+  
+**Electrical Testing**
+
+Electrical parameters like:
+ * Input Offset Voltage
+ * Bias Current
+ * Input Resistance
+ * Output Voltage Swing
+are tested at different temperatures corners(TA = 25C,Timin,Tmax) to verify behaviour across the temperature range.
+
+**Equipment used**
+
+ATE(Automated Test Equipment) + Handler
+ * The handler places the DUT into the test socket and controls temperature.
+ * ATE executes the test programs, measuring electrical characteristics.
+   
+### 4.B.3 Summary: ATE And Test Categories
+<p allign="center">
+  <img src="./MOD4/Mod4.6.png" width="700">
+</p>
