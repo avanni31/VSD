@@ -836,7 +836,7 @@ This phase in semiconductor testing, focusing on temperature corner testing to e
 
 **Test Overview:**
  * **Parts Loaded into Handler:**
-Devices Under Test (DUTs) are loaded into a handler with temperature-controlled test fixtures (not ovens) connected to an ATE (Automated Test Equipment) setup.
+   * Devices Under Test (DUTs) are loaded into a handler with temperature-controlled test fixtures (not ovens) connected to an ATE (Automated Test Equipment) setup.
 
  * **Hot Test:**
    * Tests are done at high temperatures (e.g., up to 70°C for LM741C).
