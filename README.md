@@ -895,6 +895,7 @@ In this module, however, the focus is more on the design and building of the mod
 <p allign="center">
   <img src="./MOD5/Mod5.3.jpeg" width="700">
 </p>
+
    * Thickness: 0.2mm
       > We can Add thickness by first choosing the rectangle then going to the modeler tab->surface->thickness 
 <p allign="center">
@@ -906,6 +907,7 @@ In this module, however, the focus is more on the design and building of the mod
 <p allign="center">
   <img src="./MOD5/Mod5.6.jpeg" width="700">
 </p>
+
    * Change the material to silicon
 <p allign="center">
   <img src="./MOD5/Mod5.7.jpeg" width="700">
@@ -937,13 +939,118 @@ In this module, however, the focus is more on the design and building of the mod
 </p>
      
  But this is not correct considering the die does not directly lay over the substrate their is an epoxy in between them and you will see that their is a space between the substrate and the die.
- <p allign="center">
+<p allign="center">
   <img src="./MOD5/Mod5.13.jpeg" width="700">
 </p>
 
 ## 5.C Adding Die Attach Material and Bond Pads
+* **Step 4:** Create a die attach
+   * Create a rectangle through the draw tab
+   * Dimensions: 3mm×3mm
+   * Coordinates: (0,0,0)
+<p allign="center">
+  <img src="./MOD5/Mod5.14.jpeg" width="700">
+</p>
+
+   * Thickness: -0.1mm
+<p allign="center">
+  <img src="./MOD5/Mod5.15.jpeg" width="700">
+</p>
+
+   * Change the material to modified_epoxy
+<p allign="center">
+  <img src="./MOD5/Mod5.16.jpeg" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.17.jpeg" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.18.jpeg" width="700">
+</p>
+
+### 5.C.1 Wire Bonding
+It happens between two pads that is considering one is on the die and one is on the substrate.
+
+* **Step 5:** Create a bondpad on the die
+   * Create a rectangle through the draw tab
+   * Dimensions: o.2mm×0.2mm
+   * Coordinates: (0.2,0.2,0.2)
+<p allign="center">
+  <img src="./MOD5/Mod5.19.jpeg" width="700">
+</p>
+
+   * Thickness: 0.005
+   * Change the material to copper
+<p allign="center">
+  <img src="./MOD5/Mod5.20.jpeg" width="700">
+</p>
+
+* **Step 6:** Create a bondpad on the substrate
+   * Create a rectangle through the draw tab
+   * Dimensions: 0.2mm×0.2mm
+   * Coordinates: (0.2,-0.8,-0.1)
+<p allign="center">
+  <img src="./MOD5/Mod5.21.jpeg" width="700">
+</p>
+
+   * Thickness: 0.005
+   * Change the material to copper
+<p allign="center">
+  <img src="./MOD5/Mod5.22.jpeg" width="700">
+</p>
+
 ## 5.D Wire Bond Creation and Material Assignment
+* **Step 7:** Connecting  bondpads  with bondwire
+  * Bondwires are of three types:
+    > h1,h2 are the heat effective zones
+    * JEDEC 4-point   
+<p allign="center">
+  <img src="./MOD5/Mod5.23.jpeg" width="700">
+</p>
+
+ * JEDEC 5-point
+<p allign="center">
+  <img src="./MOD5/Mod5.24.jpeg" width="700">
+</p>
+
+ * Low
+<p allign="center">
+  <img src="./MOD5/Mod5.25.jpeg" width="700">
+</p>
+
+  * Create multiple such bondwires all around the die
+<p allign="center">
+  <img src="./MOD5/Mod5.26.jpeg" width="700">
+</p>
+
+  * Material: Gold
+    > material should be ductile as it has to bennd from the bondpad over the die to the bondpad over the substrate 
+
+<p allign="center">
+  <img src="./MOD5/Mod5.27.jpeg" width="700">
+</p>
+
 ## 5.E Applying Mold Compound and Finalizing the Package Model    
+ * **Step 8:** The mold compound is placed over and around the semiconductor die (chip) after it is mounted and electrically connected to the substrate or leadframe.
+   > Since the thickness of the whole package till now including the substrate is 1.2 mm in which the substrate covers 0.7mm of thickness, we will make a our mold component of thickness 1.2mm which will be placed above the substrate 
+   * Create a rectangle through the draw tab
+   * Dimensions: 5mm×5mm
+   * Coordinates: (-1,-1,-0.1)
+   * Thickness: 1.2mm
+<p allign="center">
+  <img src="./MOD5/Mod5.29.jpeg" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.28.jpeg" width="700">
+</p>
 
+   * Material: epoxy_Kevlar_xy
+<p allign="center">
+  <img src="./MOD5/Mod5.30.jpeg" width="700">
+</p>
 
+The mold component thickness is kept 1.2mm instead of 0.7mm because after we apply the mold component and the package is made it then goes to have the laser marking which destroys some amount of epoxy that we have applied. If we would have not applied extra epoxy then the connections could have been affected.
+<p allign="center">
+  <img src="./MOD5/Mod5.31.jpeg" width="700">
+</p>
 
