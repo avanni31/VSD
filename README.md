@@ -866,3 +866,84 @@ ATE(Automated Test Equipment) + Handler
 <p allign="center">
   <img src="./MOD4/Mod4.6.png" width="700">
 </p>
+
+## 5.Package Design And Modeling: Building A Semiconductor Package From Scratch
+### 5.A Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
+### 5.A.1 Why do we build a virtual model of a semiconductor chip in ANSYS software?
+We create a virtual model of a semiconductor chip in ANSYS to simulate and evaluate its performance under various physical conditions. This helps in optimizing the design before physical prototyping.  
+ * **To assess thermal properties** – Just like we did using Icepak in Module 3, we evaluate how heat behaves within the chip. This is only one aspect of overall performance evaluation.
+ * **To study electrical performance** – For this, we use tools like Q3D Extractor and Maxwell Solvers, which are part of the ANSYS suite:
+   * We perform 3D electrical analysis to study how currents and fields behave inside the chip.
+   * Based on the design, we then conduct thermal analysis to see how the electrical behavior impacts temperature distribution.
+
+In this module, however, the focus is more on the design and building of the model itself, rather than running full electrical or thermal simulations.
+
+### 5.B Creating the Die and Substrate in AEDT
+ * **Step 1:** Make a model in Q3D Extracter
+<p allign="center">
+  <img src="./MOD5/Mod5.1.png" width="700">
+</p>
+
+ * **Step 2:** Create a Die:
+   * Create a rectangle through the draw tab
+   * Dimensions: 3mm×3mm
+   * Coordinates: (0,0,0)
+     > Till now the die is in 2D to make it 3D we have to add a thickness.
+<p allign="center">
+  <img src="./MOD5/Mod5.2.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.3.png" width="700">
+</p>
+   * Thickness: 0.2mm
+      > We can Add thickness by first choosing the rectangle then going to the modeler tab->surface->thickness 
+<p allign="center">
+  <img src="./MOD5/Mod5.4.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.5.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.6.png" width="700">
+</p>
+   * Change the material to silicon
+<p allign="center">
+  <img src="./MOD5/Mod5.7.png" width="700">
+</p>
+
+ * **Step 3:** Now we have to put this die on a substrate
+   * Create a rectangle through the draw tab
+   * Dimensions: 5mm×5mm
+   * Coordinates: (-1,-1,-0.1)
+<p allign="center">
+  <img src="./MOD5/Mod5.8.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.9.png" width="700">
+</p>
+
+   * Thickness: -0.5mm
+    > The minus sign is put because other wise the substrate swollows the die in it.
+<p allign="center">
+  <img src="./MOD5/Mod5.10.png" width="700">
+</p>
+
+   * Change the material to FR4_epoxy
+<p allign="center">
+  <img src="./MOD5/Mod5.11.png" width="700">
+</p>
+<p allign="center">
+  <img src="./MOD5/Mod5.12.png" width="700">
+</p>
+     
+ But this is not correct considering the die does not directly lay over the substrate their is an epoxy in between them and you will see that their is a space between the substrate and the die.
+ <p allign="center">
+  <img src="./MOD5/Mod5.13.png" width="700">
+</p>
+
+### 5.C Adding Die Attach Material and Bond Pads
+### 5.D Wire Bond Creation and Material Assignment
+### 5.E Applying Mold Compound and Finalizing the Package Model    
+
+
+
