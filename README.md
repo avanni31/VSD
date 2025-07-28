@@ -605,9 +605,9 @@ Wafer Level Packaging (WLP) is a technology where the IC packaging process is do
 | 9    | Laser Marking & Singulation  | Identify and separate final packaged chips        |
 
 ## 3. Labs:Thermal Simulation Of Semiconductor Packages With ANSYS
-### 3.A Introduction And Getting Started With ANSYS Electronics Desktop  
+## 3.A Introduction And Getting Started With ANSYS Electronics Desktop  
 ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that combines Electromagnetic, Signal Integrity, Thermal and Electro-Mechanical simulation tools in a single integrated platform and it is widely used for designing and analyzing high-speed electronic circuits and systems.
-### 3.B Setting Up A Flip-Chip BGA Package  
+## 3.B Setting Up A Flip-Chip BGA Package  
 <p allign="center">
   <img src="./MOD3/Mod3.1.png" width="700">
 </p>  
@@ -637,7 +637,7 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
   <img src="./MOD3/Mod3.8.png" width="700">
 </p>
 
-### 3.C Material Definitions And Thermal Power Sources  
+## 3.C Material Definitions And Thermal Power Sources  
 
 1. Review and modify the material and definition types for the different components of the model.
 2. Add or Assign Source Thermal Model for Die
@@ -666,7 +666,7 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
   <img src="./MOD3/Mod3.11.png" width="700">
 </p>
 
-### 3.D Meshing And Running The Thermal Analysis  
+## 3.D Meshing And Running The Thermal Analysis  
 5. Generate Mesh  
 6. Review Mesh Quality metrics  
 
@@ -691,7 +691,7 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
   <img src="./MOD3/Mod3.15.png" width="700">
 </p>
 
-### 3.E Viewing Results And Exploring Other Package Types  
+## 3.E Viewing Results And Exploring Other Package Types  
 1. Validate the Simulation setup
    
  * Click on the "Validate" button in the top
@@ -735,7 +735,7 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
 ## 4.Ensure Package Reliability: Testing And Performance Validation  
 Ensuring package reliability in semiconductor devices requires more than just mechanical assembly steps like wire bonding or solder bumping—it also demands rigorous electrical testing. While these manufacturing processes ensure structural integrity, they do not verify whether the device functions correctly. Electrical testing is essential to detect issues such as open or short circuits, misaligned interconnects, or degraded signal performance that may not be visible externally. This includes parametric and functional tests, thermal cycling, burn-in testing, and sometimes X-ray inspection to identify hidden defects. Without these tests, there is no guarantee that the packaged chip will operate reliably in real-world applications, making performance validation a critical step before deployment.
 
-### 4.A Introduction to Package Testing and Electrical Functionality Checks  
+## 4.A Introduction to Package Testing and Electrical Functionality Checks  
 ### 4.A.1 Tsting at Different Stages
 <p allign="center">
   <img src="./MOD4/Mod4.1.png" width="700">
@@ -808,7 +808,7 @@ The AOST is a quick and critical test performed after assembly to detect open or
 
 This process ensures that only functionally sound and structurally reliable packages are moved forward for final testing or customer shipment.
 
-### 4.B Reliability and Performance Testing of Semiconductor Packages
+## 4.B Reliability and Performance Testing of Semiconductor Packages
 ### 4.B.1 Burn-in Test
 <p allign="center">
   <img src="./MOD4/Mod4.4.png" width="700">
@@ -868,7 +868,7 @@ ATE(Automated Test Equipment) + Handler
 </p>
 
 ## 5.Package Design And Modeling: Building A Semiconductor Package From Scratch
-### 5.A Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
+## 5.A Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
 ### 5.A.1 Why do we build a virtual model of a semiconductor chip in ANSYS software?
 We create a virtual model of a semiconductor chip in ANSYS to simulate and evaluate its performance under various physical conditions. This helps in optimizing the design before physical prototyping.  
  * **To assess thermal properties** – Just like we did using Icepak in Module 3, we evaluate how heat behaves within the chip. This is only one aspect of overall performance evaluation.
@@ -878,7 +878,7 @@ We create a virtual model of a semiconductor chip in ANSYS to simulate and evalu
 
 In this module, however, the focus is more on the design and building of the model itself, rather than running full electrical or thermal simulations.
 
-### 5.B Creating the Die and Substrate in AEDT
+## 5.B Creating the Die and Substrate in AEDT
  * **Step 1:** Make a model in Q3D Extracter
 <p allign="center">
   <img src="./MOD5/Mod5.1.jpeg" width="700">
@@ -941,9 +941,9 @@ In this module, however, the focus is more on the design and building of the mod
   <img src="./MOD5/Mod5.13.jpeg" width="700">
 </p>
 
-### 5.C Adding Die Attach Material and Bond Pads
-### 5.D Wire Bond Creation and Material Assignment
-### 5.E Applying Mold Compound and Finalizing the Package Model    
+## 5.C Adding Die Attach Material and Bond Pads
+## 5.D Wire Bond Creation and Material Assignment
+## 5.E Applying Mold Compound and Finalizing the Package Model    
 
 
 
