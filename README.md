@@ -15,7 +15,7 @@ It plays a critical role in:
 The die, which is the core of a semiconductor chip, is manufactured in an extremely protected and clean environment because it contains microscopic components like transistors, logic gates, and interconnects.  
 
 Even a tiny particle of dust or a slight variation in temperature can damage or disrupt these delicate structures.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.1.png" width="300">
 </p>  
 Major semiconductor foundry companies are:  
@@ -28,7 +28,7 @@ Major semiconductor foundry companies are:
 
 ### 1.A.2 Preparing the die for the real world:
 In modern electronics, a single chip often contains multiple integrated circuits (ICs) working together to deliver complex functionality. These ICs are created on individual dies, which are manufactured in ultra-clean, protected environments using advanced semiconductor processes. Such a chip is seen below which from an Apple Iphone-
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.2.png" width="300">
 </p> 
 
@@ -43,7 +43,7 @@ Ultimately, a die’s “personality” — its functionality, connectivity, and
 
 ### 1.A.3 Anatomy of a Ball Grid Array (BGA) Package:
 A Ball Grid Array (BGA) is a popular semiconductor packaging type where electrical connections are made using an array of solder balls on the underside of the package.    
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.3.png" width="500">
 </p> 
 
@@ -59,7 +59,7 @@ A Ball Grid Array (BGA) is a popular semiconductor packaging type where electric
 | Solder Balls     | Spheres that connect the package to the motherboard.    |
 ### 1.A.4 Semiconductor Manufacturing Flow:  
 The semiconductor industry is divided into different types of companies based on what part of the chip lifecycle they handle — from design to manufacturing to packaging and testing.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.4.png" width="700">
 </p> 
   
@@ -80,13 +80,13 @@ The semiconductor industry is divided into different types of companies based on
 **Companies**: ASE, Amkor, JCET, PTI, UTAC, TSMC (also does some packaging).
 
 ## 1.B Understanding Package Requirements And Foundational Package Types  
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.5.png" width="300">
 </p>   
 This image represents the Silicon Lifecycle, which outlines the key stages involved in the development and use of a semiconductor chip (silicon).  
 
 ### 1.B.1 Product requirements:  
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.6.png" width="300">
 </p>   
 The image illustrates how a chip is connected to a package, which is then mounted onto a board (like a PCB). This layered structure ensures that the tiny and delicate silicon chip can interact with the external world safely and efficiently.
@@ -108,7 +108,7 @@ Finally, the design aims to achieve all the above goals while keeping cost as lo
 
 ### 1.B.2 Typical package structure 
 The die is mounted on a carrier, then sealed with a mold compound. Signals pass through die-to-carrier interconnections, and then from the carrier to the system board (PCB).   
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.14.png" width="700">
 </p>  
 
@@ -122,7 +122,7 @@ The die is mounted on a carrier, then sealed with a mold compound. Signals pass 
 | **System Board (PCB)**          | The main circuit board that hosts multiple chips and distributes power, signals, and clock throughout the system. |
 
 ### 1.B.3 Types of Semiconductor Packages
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.7.png" width="700">
 </p> 
 
@@ -164,7 +164,7 @@ Modern style where packages are directly mounted onto the surface of the PCB. Us
 
 ### 1.C.2 Options For Interconnection
 This section explains two common interconnection techniques used in semiconductor packaging: **Wirebond** and **Bump/Solder (Flip-Chip)**.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.8.png" width="700">
 </p> 
 
@@ -212,7 +212,7 @@ This repository provides an overview of different semiconductor package types ba
 1. **Leadframe Packages**
 
 Leadframe is a cost-effective, metal-based packaging solution.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.9.png" width="300">
 </p> 
 
@@ -227,7 +227,7 @@ Leadframe is a cost-effective, metal-based packaging solution.
 2. **Laminate Packages**
 
 Laminate substrates are used for high-density routing in modern ICs.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.10.png" width="300">
 </p> 
 
@@ -252,7 +252,7 @@ Laminate substrates are used for high-density routing in modern ICs.
 3. **Advanced Substrate Packaging**
 
 Used in high-end systems requiring dense I/O and multi-die integration.
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.11.png" width="300">
 </p> 
 
@@ -265,7 +265,7 @@ Used in high-end systems requiring dense I/O and multi-die integration.
 | **CoWoS**    | Chip on Wafer on Substrate (SoC + HBM on silicon interposer)  |
 
 ### 1.D.2  Semiconductor Packaging Integration Flow (COB to 3D)
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.12.png" width="500">
 </p> 
 
@@ -281,7 +281,7 @@ The image provides a comprehensive flow of how semiconductors (single or multich
 - The **Package Substrate** (carrier) connects to the **PCB**, completing the system.
 
 ## 1.E Comparative Analysis And Selecting The Right Packaging Solution
-<p allign="center">
+<p align="center">
   <img src="./MOD1/Mod1.13.png" width="700">
 </p> 
 
@@ -290,7 +290,7 @@ It’s the transformation journey of a naked die on a wafer to a robust, tested,
 
 ## 2.A Setting The Stage - Supply Chain And Facilities  
 ### 2.A.1 Review Of The Supply Chain: 
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.1.png" width="700">
 </p> 
  End-to-end semiconductor product development flow — from designing an integrated circuit (IC) to delivering the final product (like a smartphone). Here's a breakdown of each stage:  
@@ -354,7 +354,7 @@ Most companies use a **hybrid model** — doing some ATMP internally and outsour
 
 - 📍 **Location**: Sanand, Gujarat  
 - 🏗️ **Total Area**: 1.4 million square feet  
-- 🧼 **Cleanroom Area**: 500,000 sq ft  
+- 🧼 **Cleanroom Area**: 500,000 ft²   
   - Special dust-controlled rooms for assembly & testing.
 
 - 💡 **Cleanroom Classification**:
@@ -362,7 +362,7 @@ Most companies use a **hybrid model** — doing some ATMP internally and outsour
     Suitable for packaging processes where medium-level cleanliness is required.
     
 ### 2.A.5 Layout of a Semiconductor Packaging Facility: 
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.2.png" width="700">
 </p>
 This layout illustrates how a standard ATMP facility is organized, with each area having a specific role in the chip packaging process.
@@ -402,7 +402,7 @@ This layout illustrates how a standard ATMP facility is organized, with each are
 ## 2.B Wafer Pre-Preparation - Grinding And Dicing  
 
 This repository explains the **wafer preparation process** used in semiconductor packaging, particularly before dicing the wafer into individual chips.
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.3.png" width="700">
 </p>
 
@@ -447,7 +447,7 @@ This repository explains the **wafer preparation process** used in semiconductor
 ## 2.C Wire Bond Packaging - Die Attach To Molding
 This process outlines how individual semiconductor chips (dies) are taken from the wafer stage and converted into finished, usable **wire-bonded packages**.
 
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.4.png" width="700">
 </p>
 
@@ -491,7 +491,7 @@ This process outlines how individual semiconductor chips (dies) are taken from t
 
 Flip chip packaging is an advanced technique where the chip is flipped and connected directly to the substrate using solder bumps. It provides higher performance, better heat dissipation, and smaller packaging size.
 
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.5.png" width="700">
 </p>
 
@@ -552,7 +552,7 @@ Flip chip packaging is an advanced technique where the chip is flipped and conne
 
 Wafer Level Packaging (WLP) is a technology where the IC packaging process is done at the wafer level instead of after the wafer has been diced into individual chips. It allows for smaller package size, improved performance, and cost-effective high-volume production.
 
-<p allign="center">
+<p align="center">
   <img src="./MOD2/Mod2.6.png" width="700">
 </p>
 
@@ -608,32 +608,32 @@ Wafer Level Packaging (WLP) is a technology where the IC packaging process is do
 ## 3.A Introduction And Getting Started With ANSYS Electronics Desktop  
 ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that combines Electromagnetic, Signal Integrity, Thermal and Electro-Mechanical simulation tools in a single integrated platform and it is widely used for designing and analyzing high-speed electronic circuits and systems.
 ## 3.B Setting Up A Flip-Chip BGA Package  
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.1.png" width="700">
 </p>  
 
  **Create Flipchip BGA Package**
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.2.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.3.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.4.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.5.png" width="700">
 </p>
 
 **The Package is generated:**
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.6.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.7.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.8.png" width="700">
 </p>
 
@@ -642,16 +642,16 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
 1. Review and modify the material and definition types for the different components of the model.
 2. Add or Assign Source Thermal Model for Die
   * In "Project Manager" sub-window, expand Thermal section and open the "BGA1_die_source" and configure the thermal condition as shown below:
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.9.png" width="700">
 </p>
 3. Add/ Assign Source Thermal Model for Substrate 
 
   * To add thermal boundary condition for the substrate, right click on "Flipchip_BGA1_substrate" under "Models -> Flipchip_BGA1_Group -> Solids" and assign a Thermal Source.  
   
-  *  Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.
+  *  Set the thermal condition on the substrate to Fixed Temperature and the temperature as Ambient.
 
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.10.png" width="700">
 </p>
 4. Add Thermal monitors for the different components
@@ -662,7 +662,7 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
     
   * Repeat the same for the die and the die-underfill.
     
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.11.png" width="700">
 </p>
 
@@ -671,23 +671,23 @@ ANSYS Electronics Desktop (AEDT) is a multi-physics simulation software that com
 6. Review Mesh Quality metrics  
 
 **Mesh Quality - Face Alignment**
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.12.png" width="700">
 </p>
 
 **Mesh Quality - Skewness**
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.13.png" width="700">
 </p>
 
 **Mesh Quality - Volume**
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.14.png" width="700">
 </p>
 
 7. Add Thermal Analysis
 Under "Project Manager", right click on "Analysis and select Add Analysis Setup" and configure the settings as required.
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.15.png" width="700">
 </p>
 
@@ -698,12 +698,12 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
    
  * Ensure all checks are validated
    
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.16.png" width="700">
 </p>  
 2. Run the simulation and plot the temperature map
 
- * Click on "Analyze All" button in the top
+ * Click on the "Analyze All" button at the top
    
  * Wait for the simulation to get completed
    
@@ -719,16 +719,16 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
 
   c.Surface Smoothing and click on "Enable Gaussian Smoothing"
    
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.17.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.18.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.19.png" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD3/Mod3.20.png" width="700">
 </p>
 
@@ -736,13 +736,13 @@ Under "Project Manager", right click on "Analysis and select Add Analysis Setup"
 Ensuring package reliability in semiconductor devices requires more than just mechanical assembly steps like wire bonding or solder bumping—it also demands rigorous electrical testing. While these manufacturing processes ensure structural integrity, they do not verify whether the device functions correctly. Electrical testing is essential to detect issues such as open or short circuits, misaligned interconnects, or degraded signal performance that may not be visible externally. This includes parametric and functional tests, thermal cycling, burn-in testing, and sometimes X-ray inspection to identify hidden defects. Without these tests, there is no guarantee that the packaged chip will operate reliably in real-world applications, making performance validation a critical step before deployment.
 
 ## 4.A Introduction to Package Testing and Electrical Functionality Checks  
-### 4.A.1 Tsting at Different Stages
-<p allign="center">
+### 4.A.1 Testing at Different Stages
+<p align="center">
   <img src="./MOD4/Mod4.1.png" width="700">
 </p>  
 This illustrates the complete process flow from chip manufacturing to final system-level testing, highlighting the collaboration between Foundry and OSAT 
 
- 1. **Foundary Stage** 
+ 1. **Foundry Stage** 
  
   * **Front-End Manufacturing**
     Integrated circuits are fabricated on silicon wafers using processes like photolithography, etching, and deposition.
@@ -766,7 +766,7 @@ This illustrates the complete process flow from chip manufacturing to final syst
    Chips are tested in conditions that simulate actual end-use environments, ensuring real-world functionality and reliability.
    
 ### 4.A.2 Packaging Testing 
-<p allign="center">
+<p align="center">
   <img src="./MOD4/Mod4.2.png" width="700">
 </p>
 This illustrates the steps involved in ensuring the reliability of semiconductor packages after fabrication and assembly.  
@@ -790,7 +790,7 @@ This is where electrical, burn-in, and reliability chamber tests are conducted t
    Comprehensive cold and hot functional testing to validate electrical characteristics, performance, and reliability across temperature ranges.
    
 ### 4.A.3 Assembly Open And Short Test-> Functionality
-<p allign="center">
+<p align="center">
   <img src="./MOD4/Mod4.3.png" width="700">
 </p>
 The AOST is a quick and critical test performed after assembly to detect open or short circuits in package leads or solder balls. It typically follows the Trim and Form process (for lead frame packages) or Singulation (for BGA packages). 
@@ -810,7 +810,7 @@ This process ensures that only functionally sound and structurally reliable pack
 
 ## 4.B Reliability and Performance Testing of Semiconductor Packages
 ### 4.B.1 Burn-in Test
-<p allign="center">
+<p align="center">
   <img src="./MOD4/Mod4.4.png" width="700">
 </p>
 To detect early(infant mortality) failures in package components by exposing them to high temperature, voltage and power cycling before shipping to customers.  
@@ -829,7 +829,7 @@ To detect early(infant mortality) failures in package components by exposing the
    Improves reliability but slightly reduces total component lifespan.
    
 ### 4.B.2 Final Test
-<p allign="center">
+<p align="center">
   <img src="./MOD4/Mod4.5.png" width="700">
 </p>
 This phase in semiconductor testing, focusing on temperature corner testing to ensure that the packaged IC meets its specifications.  
@@ -863,7 +863,7 @@ ATE(Automated Test Equipment) + Handler
  * ATE executes the test programs, measuring electrical characteristics.
    
 ### 4.B.3 Summary: ATE And Test Categories
-<p allign="center">
+<p align="center">
   <img src="./MOD4/Mod4.6.png" width="700">
 </p>
 
@@ -879,8 +879,8 @@ We create a virtual model of a semiconductor chip in ANSYS to simulate and evalu
 In this module, however, the focus is more on the design and building of the model itself, rather than running full electrical or thermal simulations.
 
 ## 5.B Creating the Die and Substrate in AEDT
- * **Step 1:** Make a model in Q3D Extracter
-<p allign="center">
+ * **Step 1:** Make a model in Q3D Extractor
+<p align="center">
   <img src="./MOD5/Mod5.1.jpeg" width="700">
 </p>
 
@@ -889,27 +889,27 @@ In this module, however, the focus is more on the design and building of the mod
    * Dimensions: 3mm×3mm
    * Coordinates: (0,0,0)
      > Till now the die is in 2D to make it 3D we have to add a thickness.
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.2.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.3.jpeg" width="700">
 </p>
 
    * Thickness: 0.2mm
       > We can Add thickness by first choosing the rectangle then going to the modeler tab->surface->thickness 
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.4.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.5.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.6.jpeg" width="700">
 </p>
 
    * Change the material to silicon
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.7.jpeg" width="700">
 </p>
 
@@ -917,29 +917,29 @@ In this module, however, the focus is more on the design and building of the mod
    * Create a rectangle through the draw tab
    * Dimensions: 5mm×5mm
    * Coordinates: (-1,-1,-0.1)
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.8.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.9.jpeg" width="700">
 </p>
 
    * Thickness: -0.5mm
-    > The minus sign is put because other wise the substrate swollows the die in it.
-<p allign="center">
+    > The minus sign is put because other wise the substrate swallows the die in it.
+<p align="center">
   <img src="./MOD5/Mod5.10.jpeg" width="700">
 </p>
 
    * Change the material to FR4_epoxy
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.11.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.12.jpeg" width="700">
 </p>
      
  But this is not correct considering the die does not directly lay over the substrate their is an epoxy in between them and you will see that their is a space between the substrate and the die.
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.13.jpeg" width="700">
 </p>
 
@@ -948,23 +948,23 @@ In this module, however, the focus is more on the design and building of the mod
    * Create a rectangle through the draw tab
    * Dimensions: 3mm×3mm
    * Coordinates: (0,0,0)
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.14.jpeg" width="700">
 </p>
 
    * Thickness: -0.1mm
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.15.jpeg" width="700">
 </p>
 
    * Change the material to modified_epoxy
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.16.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.17.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.18.jpeg" width="700">
 </p>
 
@@ -975,13 +975,13 @@ It happens between two pads that is considering one is on the die and one is on 
    * Create a rectangle through the draw tab
    * Dimensions: o.2mm×0.2mm
    * Coordinates: (0.2,0.2,0.2)
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.19.jpeg" width="700">
 </p>
 
    * Thickness: 0.005
    * Change the material to copper
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.20.jpeg" width="700">
 </p>
 
@@ -989,13 +989,13 @@ It happens between two pads that is considering one is on the die and one is on 
    * Create a rectangle through the draw tab
    * Dimensions: 0.2mm×0.2mm
    * Coordinates: (0.2,-0.8,-0.1)
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.21.jpeg" width="700">
 </p>
 
    * Thickness: 0.005
    * Change the material to copper
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.22.jpeg" width="700">
 </p>
 
@@ -1004,53 +1004,53 @@ It happens between two pads that is considering one is on the die and one is on 
   * Bondwires are of three types:
     > h1,h2 are the heat effective zones
     * JEDEC 4-point   
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.23.jpeg" width="700">
 </p>
 
  * JEDEC 5-point
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.24.jpeg" width="700">
 </p>
 
  * Low
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.25.jpeg" width="700">
 </p>
 
   * Create multiple such bondwires all around the die
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.26.jpeg" width="700">
 </p>
 
   * Material: Gold
-    > material should be ductile as it has to bennd from the bondpad over the die to the bondpad over the substrate 
+    > The material should be ductile as it needs to bend from the bondpad on the die to the one on the substrate.
 
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.27.jpeg" width="700">
 </p>
 
 ## 5.E Applying Mold Compound and Finalizing the Package Model    
  * **Step 8:** The mold compound is placed over and around the semiconductor die (chip) after it is mounted and electrically connected to the substrate or leadframe.
-   > Since the thickness of the whole package till now including the substrate is 1.2 mm in which the substrate covers 0.7mm of thickness, we will make a our mold component of thickness 1.2mm which will be placed above the substrate 
+   > Since the thickness of the whole package till now including the substrate is 1.2 mm in which the substrate covers 0.7mm of thickness, we will make a our mold compound of thickness 1.2mm which will be placed above the substrate 
    * Create a rectangle through the draw tab
    * Dimensions: 5mm×5mm
    * Coordinates: (-1,-1,-0.1)
    * Thickness: 1.2mm
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.29.jpeg" width="700">
 </p>
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.28.jpeg" width="700">
 </p>
 
    * Material: epoxy_Kevlar_xy
-<p allign="center">
+<p align="center">
   <img src="./MOD5/Mod5.30.jpeg" width="700">
 </p>
 
-The mold component thickness is kept 1.2mm instead of 0.7mm because after we apply the mold component and the package is made it then goes to have the laser marking which destroys some amount of epoxy that we have applied. If we would have not applied extra epoxy then the connections could have been affected.
-<p allign="center">
+The mold compompound thickness is kept 1.2mm instead of 0.7mm because after we apply the mold component and the package is made it then goes to have the laser marking which destroys some amount of epoxy that we have applied. If we would have not applied extra epoxy then the connections could have been affected.
+<p align="center">
   <img src="./MOD5/Mod5.31.jpeg" width="700">
 </p>
 
